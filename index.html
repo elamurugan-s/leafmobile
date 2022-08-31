@@ -1,0 +1,728 @@
+<style>
+     * {
+        box-sizing: content-box;
+        margin: 0;
+    }
+    .hamburger{
+        margin-top: 25px;
+        margin-left: 20px;
+        display: none;
+    }
+    
+    .line{
+        background-color: black;
+        height: 4px;
+        width: 20px;
+        margin-top:5px;
+        display: none;
+    }
+    #navheadermobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left:-24px ;
+        display: none;
+    }
+    .headerbackground{
+        background-size: cover;
+        margin-top: 0px;
+        background-image: url("panamaram.jpg");
+        height: 60vh;
+    }
+    #closeicon{
+        margin-left: 100px;
+        margin-bottom: -28px;
+        display: none;
+    }
+    .navheadertextmobile{
+        margin-top: 18px;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        column-gap: 20px;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+        .header img{
+            max-height: 7vw;
+            background-size: contain;
+            align-items: center;
+        
+        }
+        .navheader{
+            display: flex;
+        }
+
+        .navheadertext{
+            list-style: none;
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            font-size: 0.875em;
+            font-weight: 400;
+            margin-top: 0.375rem;
+            margin-bottom: 0.375rem;
+            margin-left: 0.375rem;
+            margin-right: 0.375rem;
+            padding-top: 1.5rem;
+            padding-left: 0.375rem;
+            padding-right: 0.375rem;
+            padding-bottom: 0.375rem;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+            color: rgb(27, 27, 27);
+            cursor: pointer;
+        }
+        .navheadertext span{
+            font-weight: 700;
+        }
+        .headerfinish{
+            background-image: url("panamaram.jpg");
+        }
+        .about{
+            display: block;
+            font-family: 'Fjalla One', arial, sans-serif;
+            font-weight: 540;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.875em;
+            line-height: 1.4;
+            color: rgb(27, 27, 27);
+            margin-top: 4.375rem;
+            letter-spacing: normal;
+            text-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
+            padding-bottom: 3.125rem;
+        }
+        .vision {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .visiontext h1{
+            font-size: 1em;
+            line-height: 1.25;
+            font-weight: 400;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+            color: rgb(27, 27, 27);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            text-align: center;
+        }
+        .visiontext p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+            color: rgb(94, 94, 94);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            padding-top: 1.375rem;
+        }
+        .misson {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 5rem;
+        }
+        .missiontext h1{
+            font-size: 1em;
+            line-height: 1.25;
+            font-weight: 400;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+            color: rgb(27, 27, 27);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            text-align: center;
+        }
+        .missiontext p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+            color: rgb(94, 94, 94);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            padding-top: 1.375rem;
+        }
+        .development {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+        }
+        .developmenttext h1{
+            font-size: 1em;
+            line-height: 1.25;
+            font-weight: 400;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+            color: rgb(27, 27, 27);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            text-align: center;
+        }
+        .developmenttext p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+            color: rgb(94, 94, 94);
+            font-family: 'Source Sans Pro', arial, sans-serif;
+            padding-top: 1.375rem;
+        }
+        .product{
+            background-image: url("lemon.jpg");
+        }
+        .product h2 {
+        margin-top: 4.375rem;
+        text-align: center;
+        padding-top: 6.25rem;
+        height: 9.375rem;
+        font-family: 'Fjalla One', arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 2.25em;
+        color:  rgb(27, 27, 27);
+       }
+        .squashes {
+        font-size: 0.875em;
+        text-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
+        line-height: 1.4;
+        font-weight: 250;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgb(27, 27, 27);
+        margin-top: 3.125rem;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        }
+        .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 90px;
+        margin-top: 3.125rem;
+        }
+    
+        .palymra{
+        background-image: url('palymra.png');
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer;
+       }
+       .palymra h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .palymra h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .palymra:hover.palymra h3{
+        opacity: 1;
+       }
+       .mango{
+        background-image: url('mango.png');
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer
+       }
+       .mango h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .mango h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .mango:hover.mango h3{
+        opacity: 1;
+       }
+       .orange{
+        background-image: url('orange.png');
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer
+       }
+       .orange h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .orange h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .orange:hover.orange h3{
+        opacity: 1;
+       }
+       .pineapple{
+        background-image: url('pineapple.png');
+        background-position: center;
+        text-align: center;
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer;
+       }
+       .pineapple h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .pineapple h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .pineapple:hover.pineapple h3{
+        opacity: 1;
+       }
+       .flower{
+        background-image: url('flower.png');
+        background-position: center;
+        text-align: center;
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer
+       }
+       .flower h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .flower h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .flower:hover.flower h3{
+        opacity: 1;
+       }
+       .null{
+        background-image: url('flower.png');
+        background-position: center;
+        text-align: center;
+        margin-top: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 300px;
+        cursor: pointer
+       }
+       .null h1{
+        padding-top: 9.375rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+       }
+       .null h3{
+        padding-top:5rem;
+        color: white;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        transition-duration: 1s;
+        opacity: 0;
+       }
+       .null:hover.null h3{
+        opacity: 1;
+       }
+       .contact{
+        margin: 2.5rem;
+       }
+       .contact h1{
+        color: black;
+        font-family: 'Fjalla One', arial, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0px 2px 30px rgb(0 0 0 / 12%);
+        font-size:  2.375em;
+        }
+        .whatsapp{
+            background-image: url('whatsappbg.png');
+        }
+        .whatsapp h2{
+        font-size: 1em;
+        margin-bottom: 1.5rem;
+        line-height: 1.25;
+        font-weight: 400;
+        color: rgb(27, 27, 27);
+        text-transform: uppercase;
+        letter-spacing: 0.125em;
+        font-family: "Source Sans Pro", arial, sans-serif;
+        text-align: center;        
+    }
+    .whatsappbutton{
+        display: flex;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 56px;
+        width: 168px;
+        background-color: rgb(69, 90, 100);
+        margin: auto;
+        margin-top: 2.25rem;
+    }
+       .whatsappbutton img{
+        height: 30px;
+        margin: auto;
+        margin-left: 2.4rem;
+    }
+       .whatsappbutton a{
+        text-decoration: none;
+        color: black;
+       }
+       .whatsappbutton p{
+        margin: auto;
+        margin-right: 2.5rem;
+       }
+    .whatsapp p{
+        font-size: 1em;
+        color: rgb(94, 94, 94);
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: "Source Sans Pro", arial, sans-serif;
+        text-align: center;
+    }
+    .email{
+        margin-top: 2.668rem;
+        font-size: 1em;
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: "Source Sans Pro", arial, sans-serif;
+    }
+    .email a{
+        text-decoration: none;
+        color: rgb(94, 94, 94);
+    }
+    .privacypolicy p{
+        text-align:center;
+        word-spacing: 2px;
+        font-size: 0.875em;
+        font-weight: 400;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        color: rgb(247, 247, 247);
+        
+    }
+    .privacypolicy span{
+        margin-left: 8px;
+    }
+    .privacypolicy {
+        margin-top: 6.25rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .address h1{
+        font-size: 1em;
+        line-height: 1.5;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        text-align: center;
+        margin-bottom: 1.75rem;
+        color: rgb(247, 247, 247);
+    }
+    .address p{
+        font-size: 1em;
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: 'Source Sans Pro', arial, sans-serif;
+        color: rgb(247, 247, 247);
+    }
+    .color{
+        background-color: black;
+        width: 100%;
+    }
+    @media(max-width:480px){
+        .headerbackground{
+            height: 40vh;
+            width: 100vh;
+        } 
+        .navheadertext {
+            font-size: 9px;
+            margin-left: 0%;
+        }
+        .hamburger{
+            display: block;
+        }
+        .line{
+            display: block;
+        }
+        .hamburger{
+            margin-bottom:20px ;
+        }
+        .navheader{
+            display: none;
+        }
+        .header img{
+            margin: auto;
+        }
+        .about{
+            text-align: center;
+            margin-left: 120px;
+        }
+        .vision{
+            flex-direction: row;
+            row-gap: 32px;
+        }
+        .visionimg{
+            width: 100%;
+        }
+        .visiontext{
+            text-align: center; 
+        }
+        .misson{
+            flex-direction: column-reverse;
+        }
+        .missiontext{
+        margin-top: 30px;
+        text-align: center;
+        margin-right: 30px;
+        }
+        .development{
+            flex-direction: column;
+        }
+        .developmenttext{
+            margin-top: 30px;
+        }
+        .product{
+            width: 100vh;
+        }
+        .product h2{
+            text-align: center;
+            font-size: 32px;
+        }
+        .squashes h1{
+            padding-left: 60px;
+        }
+        .items{
+            margin-left:60px ;
+        }
+        .mango{
+            margin-top: 40px;
+        }
+        .orange{
+            margin-top: 40px;
+        }
+        .nongu{
+            width: 100%;
+        }
+        .palymra h3{
+            opacity: 1;
+        }
+        .mango h3{
+            opacity: 1;
+        }
+        .orange h3{
+            opacity: 1;
+        }
+        .pineapple h3{
+            opacity: 1;
+        }
+        .flower h3{
+            opacity: 1;
+        }
+        .null h3{
+            opacity: 1;
+        }
+        .contact{
+            margin-left: 80px;
+        }
+        .whatsapp{
+            width: 100vh;
+        }
+        .color{
+            width: 100vh;
+        }
+
+
+       
+    }
+    
+       
+</style>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headerbackground">
+    <div class="header">
+    <div class="hamburger">
+        <div>
+            <div id="closeicon">
+                <img src="closeicon.png"> 
+            </div>
+        </div>
+        <div id="navbaropen">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+        <ul id="navheadermobile">
+            <li class="navheadertextmobile"><span>home</span> </li>
+            <li class="navheadertextmobile">contact us</li>
+            <li class="navheadertextmobile">about us</li>
+            <li class="navheadertextmobile">shop</li>
+        </ul>
+    </div>
+        <ul class="navheader">
+            <li class="navheadertext"><span>home</span> </li>
+            <li class="navheadertext">contact us</li>
+            <li class="navheadertext">about us</li>
+            <li class="navheadertext">shop</li>
+        </ul>
+        <img src="palmalogo.png" alt="palma">
+    </div>
+   </div>
+   <div class="about">
+    <p>about us</p>
+</div>
+<div class="vision">
+    <div class="visionimg">
+        <img src="visson.png" alt="vision">
+    </div>
+    <div class="visiontext">
+    <h1>vision</h1>
+    <p>Working for the socio-economic development of vulnerable<br> 
+        communities including palmyrah 
+        artisans and their families </p>
+    </div>
+</div>
+<div class="misson">
+    <div class="missiontext">
+    <h1>misson</h1>
+    <p> Providing mutual development support services through fair and profitable 
+        <br>cooperative merchandise by protecting the<br> 
+        interest of both the producers and the consumers. </p>
+    </div>
+    <div class="missonimg">
+        <img class="missionimg" src="misson.png" alt="vision">
+    </div>
+</div>
+<div class="development">
+    <div class="nongu">
+        <img src="nongu.png" alt="vision">
+    </div>
+    <div class="developmenttext">
+    <h1>DEVELOPMENTS</h1>
+    <p> MODERN PALM BASED FOODS | TRADITIONAL ORGANIC TAMIL FOODS |<br> 
+        INDIGENOUS FLAVOURS WITH ACTUAL FRUIT PULP | PALM LEAF CRAFTED <br>
+        FASHION PRODUCTS | PLASTIC REPLACEMENT | PALM ECOSYSTEM </p>
+    </div>
+</div>
+    <div class="product">
+        <h2>PRODUCTS</h2>
+    </div>
+    <div class="squashes">
+        <h1>squashes</h1>
+    </div>
+    <div class="items">
+    <div class="palymra">
+        <h1>palmyra</h1>
+        <h3> price-₹140</h3>
+    </div>
+    <div class="mango"> 
+        <h1>mango</h1>
+        <h3>price-₹140</h3>
+    </div>
+    <div class="orange">
+        <h1>orange</h1>
+        <h3>price-₹140</h3>
+    </div>
+    <div class="pineapple">
+        <h1>pineapple</h1>
+        <h3>price-₹140</h3>
+    </div>
+    <div class="flower">
+        <h1>flower</h1>
+        <h3>price-₹140</h3>
+    </div>
+    <div class="null">
+        <h1>null</h1>
+        <h3>price-₹140</h3>
+    </div>
+    </div>
+    <div class="contact">
+        <h1>contact us</h1>
+    </div>
+    <div class="whatsapp">
+        <h2>BETTER YET,GET YOUR ORDER DONE IN A JIFFY!</h2>
+        <p>order through whatsapp</p>
+    <div class="whatsappbutton">
+            <img src="whatsapplogo.png"> 
+            <p><a href="https://wa.me/+919600013171">whatsapp</a></p>
+    </div>   
+    <div class="email">
+        <P><a href="mailto:elamuruganshankar42@gmail.com">Email - palmasocial@gmail.com</a></P>
+    </div>
+    </div> 
+</div> 
+<div class="color">
+    <div class="privacypolicy">
+        <p> privacy policy <span>terms</span> and conditions </p>
+    </div>
+    <div class="address">
+        <h1>Palmalayam</h1>
+        <p>14-26/1, PALMALAYAM,Changai, 
+            Kanjirakode Post, Vilavancode Taluk, 
+            Kanyakumari District, Pincode - 629155.</p>
+    </div>   
+</div>
+<script type="text/javascript">
+    const leaf=document.getElementById("navbaropen")
+    leaf.addEventListener("click",function(){
+            document.getElementById("navheadermobile").style.display="block";
+            document.getElementById("closeicon").style.display="block";
+        })
+        const closeicon=document.getElementById("closeicon")
+        closeicon.addEventListener("click",function(){
+            document.getElementById("navheadermobile").style.display="none";
+            document.getElementById("closeicon").style.display="none";
+        })
+
+</script>
+</body>
+</html>
